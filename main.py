@@ -11,6 +11,7 @@ num_of_players = int(num_of_players)
 player_list = []
 player_score_list = []
 
+#taking user input and adding to list
 for i in range(num_of_players):
     player_name = input(f"Please enter Player number {i +1}'s name: ")
     player_name = f"{player_name}"
@@ -22,6 +23,7 @@ for i in range(num_of_players):
     del player_name
     del player_score
 
+#Writing out the players input to a file
 with open('golf.txt', 'w') as golf:
     golf.write(f"Number of Players: {num_of_players}\n")
     for i in range(num_of_players):
